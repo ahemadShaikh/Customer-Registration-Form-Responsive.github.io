@@ -1,0 +1,56 @@
+.container-fluid{
+    width: 100%;
+    /* padding: 0 15% 35px 15%; */
+    padding: 0 15% 20px 15%;
+}
+.horizontalStyle{
+    width: 80%;
+    margin: 30px auto 0 auto;
+}
+@media (max-width: 600px)
+{
+    .horizontalStyle{
+        width: 100%;
+        margin: 30px auto 0 auto;
+    }
+}
+form{
+    padding-top: 5%;
+}
+form .hDidHearBox{
+    padding-top: 35px;
+}
+.fAddress{
+    padding-top: 20px;
+}
+.phoneNumber{
+    padding-top: 20px;
+}
+.emailBox{
+    padding-top: 30px;
+}
+.others,.feedback,.Suggestions,.rec,.reference{
+    padding-top: 25px;
+}
+@media (max-width: 992px){
+    .reference{
+        display: none;
+    }
+}
+.inputFlexRow{
+    width: 64%;
+}
+
+@media (min-width: 600px) and (max-width: 992px){
+    .inputFlexRow{
+        width: 77%;
+    }
+}
+@media (max-width: 670px){
+    .inputFlexRow{
+        width: 87%;
+    }
+}
+.mb{
+    margin-bottom: 20px;
+}

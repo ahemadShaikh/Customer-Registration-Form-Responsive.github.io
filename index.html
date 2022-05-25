@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="New Customer Registration Form">
+    <meta name="keywords" content="HTML, CSS, New Customer Registration Form, Front end template, html form, simple form template ">
+    <meta name="author" content="Ahemad Shaikh">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <title>New Customer Registration Form</title>
+    <!-- custome css External file -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <section class="container-fluid">
+        <div class="mainHeading">
+            <h1>Customer Details:</h1>
+        </div>
+    </section>
+    <hr class="horizontalStyle">
+    <section class="container-fluid">
+        <form action="#">
+            <!-- full name  -->
+            <div class="fnameBox">
+                <h3>Full Name</h3>
+                <div class="inputFlexRow">
+                    <div class="fName">
+                        <input type="text" required autofocus>
+                        <p>First Name</p>
+                    </div>
+                    <div class="lName">
+                        <input type="text" required autofocus>
+                        <p>Last Name</p>
+                    </div>
+                </div>
+            </div>
+            <!-- address -->
+            <div class="fAddress">
+                <h3>Address</h3>
+                <div class="inputFlexRow">
+                    <!-- first line address -->
+                    <div class="streetAddress mb">
+                        <input type="text" required>
+                        <p>Street Address</p>
+                    </div>
+                    <!-- second line address -->
+                    <div class="streetAddressLine2 mb">
+                        <input type="text">
+                        <p>Street Address Line 2</p>
+                    </div>
+                    <!-- city & state box -->
+                    <div class="cityStateBox mb">
+                        <div class="city">
+                            <input type="text" required>
+                            <p>City</p>
+                        </div>
+                        <div class="state">
+                            <input type="text" required >
+                            <p>State / Province</p>
+                        </div>
+                    </div>
+                    <!-- pincode -->
+                    <div class="pincode">
+                        <input type="number" required>
+                        <p>Postal / Zip Code</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Phone Number -->
+            <div class="phoneNumber">
+                <h3>Phone Number</h3>
+                <input type="number" placeholder="0000-0000-00">
+            </div>
+            <!-- Email  -->
+            <div class="emailBox">
+                <h3>E-mail</h3>
+                <div class="email">
+                    <input type="text" placeholder="ex: email@yahoo.com">
+                    <p>example@example.com</p>
+                </div>
+            </div>
+            <!-- horizontal line -->
+            <hr class="horizontalStyle">
+            <!-- how did you hear about us ? -->
+            <div class="hDidHearBox">
+                <h3>How did you hear about us?</h3>
+                <select name="" id="">
+                    <option value="pleaseSelect">Please Select</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Blog">Blog</option>
+                    <option value="Newspaper">Newspaper</option>
+                    <option value="Advertisement">Advertisement</option>
+                </select>
+            </div>
+            <!-- others -->
+            <div class="others">
+                <h3>Other</h3>
+                <input type="text">
+            </div>
+            <!-- feedback us section -->
+            <div class="feedback">
+                <h3>Feedback about us:</h3>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <!-- Suggestions -->
+            <div class="Suggestions">
+                <h3>Suggestions if any for further improvement:</h3>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <!-- recommendation -->
+            <div class="rec">
+                <h3>Will you be willing to recommend us?</h3>
+                <div class="radioButton">
+                    <input type="radio" id="Yes" name="f" value="">
+                    <label for="Yes">Yes</label><br>
+                    <input type="radio" id="Maybe" name="f" value="">
+                    <label for="Maybe">Maybe</label><br>
+                    <input type="radio" id="No" name="f" value="">
+                    <label for="No">No</label>
+                </div>
+            </div>
+            <!-- references -->
+            <div class="reference">
+                <h3>Please give reference of any two people whom you feel:</h3>
+                <table>
+                    <tr>
+                        <th class=""></th>
+                        <th class="tHeading"><span>Full Name</span></th>
+                        <th class="tHeading"><span>Address</span></th>
+                        <th class="tHeading"><span>Contact Number</span></th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th class="tHeading"><input type="text"></th>
+                        <th class="tHeading"><input type="text"></th>
+                        <th class="tHeading"><input type="text"></th>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <th class="tHeading"><input type="text"></th>
+                        <th class="tHeading"><input type="text"></th>
+                        <th class="tHeading"><input type="text"></th>
+                    </tr>
+                </table>
+            </div>
+        <!-- Horizontal Line -->
+        <hr class="horizontalStyle">
+        <!-- submit button -->
+        <button type="submit">Submit</button>
+        </form>
+    </section>
+
+            <!-- copyright  -->
+            <div class="theCopy">
+                <p id="copyright">
+                    design & develop by <span class="myName">Ahemad Shaikh</span> with <i  class="heartName bi bi-suit-heart-fill"></i>
+                </p>
+            </div>
+</body>
+</html>

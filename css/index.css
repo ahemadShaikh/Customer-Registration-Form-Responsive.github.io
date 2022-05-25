@@ -1,0 +1,342 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main Heading */
+.mainHeading h1{
+    padding-top: 3%;
+    font-size: 35px;
+}
+@media (max-width: 390px)
+{
+    .mainHeading h1{
+        padding-top: 5%;
+        font-size: 25px;
+    }
+}
+@media (max-width: 280px)
+{
+    .mainHeading h1{
+        padding-top: 5%;
+        font-size: 20px;
+    }
+}
+/* full name heading */
+form .fnameBox h3,.emailBox h3,.phoneNumber h3,.hDidHearBox h3,.others h3,.feedback h3,.Suggestions h3,.rec h3,.reference h3{
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+@media (max-width: 390px)
+{
+    form .fnameBox h3,.emailBox h3,.phoneNumber h3,.others h3,.feedback h3,.Suggestions h3,.rec h3,.reference h3
+    {
+        font-size: 15px;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 390px)
+{
+    .hDidHearBox h3,.feedback h3,.Suggestions h3,.rec h3,.reference h3
+    {
+        font-size: 13px;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+}
+form .fnameBox .inputFlexRow{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+form .fnameBox .inputFlexRow .fName input,form .fnameBox .inputFlexRow .lName input{
+    width: 120%;
+    height: 27px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid rgb(172, 168, 168);
+    border-radius: 2px;
+}
+@media (min-width: 600px) and (max-width: 992px){
+    form .fnameBox .inputFlexRow{
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+    }
+    form .fnameBox .inputFlexRow .fName input,form .fnameBox .inputFlexRow .lName input{
+        width: 105%;
+        height: 27px;
+        padding-left: 5px;
+        outline: none;
+        border: 1px solid rgb(172, 168, 168);
+        border-radius: 2px;
+    }
+}
+@media (max-width: 670px)
+{
+    form .fnameBox .inputFlexRow{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    form .fnameBox .inputFlexRow .fName input,form .fnameBox .inputFlexRow .lName input{
+        width: 90%;
+        height: 27px;
+        padding-left: 5px;
+        outline: none;
+        border: 1px solid rgb(172, 168, 168);
+        border-radius: 2px;
+    }
+}
+form .fnameBox .inputFlexRow .fName input:hover,form .fnameBox .inputFlexRow .lName input:hover,.phoneNumber input:hover,.emailBox .email input:hover,.others input:hover{
+    box-shadow: 1px 1px 1px 2px rgb(169, 169, 224), -1px -1px 1px 2px rgb(110, 110, 151);
+}
+form .fnameBox .inputFlexRow .fName p,form .fnameBox .inputFlexRow .lName p,form .fAddress .cityStateBox .city p, form .fAddress .cityStateBox .state p,.emailBox .email p{
+    color: rgb(132, 128, 128);
+    font-size: 13px;
+    padding-top: 10px;
+}
+@media (max-width: 600px){
+    form .fnameBox .inputFlexRow .fName p,form .fnameBox .inputFlexRow .lName p,form .fAddress .cityStateBox .city p, form .fAddress .cityStateBox .state p,.emailBox .email p{
+        color: rgb(132, 128, 128);
+        font-size: 11px;
+        padding-top: 10px;
+    }
+}
+/* css for first name end */
+
+
+/* address  */
+.fAddress h3{
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 10px;   
+}
+
+.fAddress .inputFlexRow .streetAddress input,.fAddress .inputFlexRow .streetAddressLine2 input,.fAddress .inputFlexRow  .pincode input{
+    width: 100%;
+    height: 27px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid rgb(172, 168, 168);
+    border-radius: 2px;
+}
+.fAddress .inputFlexRow .streetAddress input:hover,.fAddress .inputFlexRow .streetAddressLine2 input:hover,.fAddress .inputFlexRow  .pincode input:hover,.hDidHearBox select:hover{
+    box-shadow: 1px 1px 1px 2px rgb(169, 169, 224), -1px -1px 1px 2px rgb(110, 110, 151);
+}
+
+.fAddress .inputFlexRow .streetAddress p,.fAddress .inputFlexRow .streetAddressLine2 p,.fAddress .inputFlexRow  .pincode p{
+    color: rgb(132, 128, 128);
+    font-size: 13px;
+    padding-top: 10px;
+}
+form .fAddress .cityStateBox{
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+}
+form .fAddress .cityStateBox .city input, form .fAddress .cityStateBox .state input {
+    width: 120%;
+    height: 27px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid rgb(172, 168, 168);
+    border-radius: 2px;
+}
+form .fAddress .cityStateBox .city input:hover, form .fAddress .cityStateBox .state input:hover{
+    box-shadow: 1px 1px 1px 2px rgb(169, 169, 224), -1px -1px 1px 2px rgb(110, 110, 151);
+}
+@media (max-width: 670px){
+    form .fAddress .cityStateBox{
+        width: 102%;
+        display: flex;
+        justify-content: space-between;
+    }
+    form .fAddress .cityStateBox .city input, form .fAddress .cityStateBox .state input {
+        width: 95%;
+        height: 27px;
+        padding-left: 5px;
+        outline: none;
+        border: 1px solid rgb(172, 168, 168);
+        border-radius: 2px;
+    }
+}
+@media (min-width:671px) and (max-width: 992px)
+{
+    form .fAddress .cityStateBox{
+        width: 97%;
+        display: flex;
+        justify-content: space-between;
+    }
+    form .fAddress .cityStateBox .city input, form .fAddress .cityStateBox .state input {
+        width: 108%;
+        height: 27px;
+        padding-left: 5px;
+        outline: none;
+        border: 1px solid rgb(172, 168, 168);
+        border-radius: 2px;
+    }
+}
+
+/* Phone Number */
+.phoneNumber input,.emailBox .email input,.hDidHearBox select,.others input{
+    width: 25%;
+    height: 27px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid rgb(172, 168, 168);
+    border-radius: 2px;
+}
+
+/* Email */
+@media (min-width: 769px) and (max-width: 991px)
+{
+    .phoneNumber input,.emailBox .email input,.hDidHearBox select,.others input{
+        width: 30%;
+        height: 27px;
+        padding-left: 5px;
+        outline: none;
+        border: 1px solid rgb(172, 168, 168);
+        border-radius: 2px;
+    }   
+}
+@media (min-width: 500px) and (max-width: 768px)
+{
+    .phoneNumber input,.emailBox .email input,.hDidHearBox select,.others input{
+        width: 45%;
+        height: 27px;
+        padding-left: 5px;
+        outline: none;
+        border: 1px solid rgb(172, 168, 168);
+        border-radius: 2px;
+    } 
+}
+@media (min-width: 371px) and (max-width: 499px)
+{
+    .phoneNumber input,.emailBox .email input,.hDidHearBox select,.others input{
+        width: 57%;
+        height: 27px;
+        padding-left: 5px;
+        outline: none;
+        border: 1px solid rgb(172, 168, 168);
+        border-radius: 2px;
+    } 
+}
+@media (max-width: 370px)
+{
+    .phoneNumber input,.emailBox .email input,.hDidHearBox select,.others input{
+        width: 87%;
+        height: 27px;
+        padding-left: 5px;
+        outline: none;
+        border: 1px solid rgb(172, 168, 168);
+        border-radius: 2px;
+    } 
+}
+/* feedback & Suggestion*/
+.feedback textarea,.Suggestions textarea{
+    padding: 5px;
+    width: 50%;
+    height: 8%;
+}
+@media (min-width: 769px) and (max-width: 992px)
+{
+    .feedback textarea,.Suggestions textarea{
+        width: 65%;
+        height: 6%;
+    }
+}
+@media (min-width: 400px) and (max-width: 768px)
+{
+    .feedback textarea,.Suggestions textarea{
+        width: 75%;
+        height: 120px;
+    }
+}
+@media (max-width: 399px)
+{
+    .feedback textarea,.Suggestions textarea{
+        width: 90%;
+        height: 100px;
+    }
+}
+
+/* Recommendation */
+.radioButton input{
+    margin-bottom: 12px;
+}
+
+/* references */
+table{
+    width: 70%;
+}
+table, th, td {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+}
+.tHeading{
+    width: 30%;
+    padding: 12px 0 0 12px;
+}
+table span{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table input{
+    width: 100%;
+    margin: auto;
+    margin-left: -13px;
+    height: 30px;
+    margin-top: -14px;
+    padding: 0 0 0 10px;
+    outline: none;
+}
+
+/* submit  btn */
+button{
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    width: 130px;
+    padding: 11px 20px;
+    cursor: pointer;
+    background-color: rgb(97, 237, 97);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s
+}
+button:hover{
+    background-color: green;
+}
+
+
+/*  */
+.theCopy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+#copyright{
+    text-align: center;
+    font-size: 0.8rem;
+}
+/* .symCopy{
+    font-size: 1rem;
+    padding-top: 10px !important;
+} */
+.myName{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heartName{
+    color: red;
+}
